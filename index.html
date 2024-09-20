@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="temiz.app - Yakında Geliyor!">
+  <title>temiz.app | Yakında Geliyor</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS for basic layout and animation -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      font-family: 'Montserrat', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #2c3e50;
+      margin-bottom: 0.2em;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #34495e;
+      margin-bottom: 1em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .coming-soon {
+      font-size: 2em;
+      color: #16a085;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .animation {
+      background-color: #1abc9c;
+      height: 20px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation: slide 2s ease-in-out infinite;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes slide {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    .subscribe {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      font-size: 1.2em;
+      border: 2px solid #16a085;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #16a085;
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #149174;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>temiz.app</h1>
+    <p>Kozmetik ve gıda ürünlerini tarayın, içerik bilgilerini ve puanlarını öğrenin.</p>
+    <p class="coming-soon">Yakında burada!</p>
+
+    <!-- Simple animated visual -->
+    <div class="animation"></div>
+  </div>
+</body>
+</html>
